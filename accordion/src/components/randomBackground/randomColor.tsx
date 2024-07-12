@@ -6,7 +6,7 @@ const RandomColor = () => {
 
   useEffect(() => {
     generate();
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [type]);
 
   function generateRandomNumberFrom(length: number): number {
@@ -54,20 +54,8 @@ const RandomColor = () => {
 
   return (
     <div style={{ background: color, width: "100vw", height: "100vh" }}>
-      <button
-        onClick={() => {
-          setType("hex"), generate();
-        }}
-      >
-        Generate Hex Color
-      </button>
-      <button
-        onClick={() => {
-          setType("rgb"), generate();
-        }}
-      >
-        Generate RGB Color
-      </button>
+      <button onClick={() => setType("hex")}>Generate Hex Color</button>
+      <button onClick={() => setType("rgb")}>Generate RGB Color</button>
       <button onClick={generate}>Generate Random Color</button>
       <div
         style={{
