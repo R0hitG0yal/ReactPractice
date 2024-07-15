@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  /* position: absolute;
+    height: 1/4;
+    width : 1/4; */
+}
+
+.product {
+  /* position: relative; */
+  padding: 20px;
+  border: 1px solid;
+  border-radius: 1.5rem;
+  box-shadow: 0rem 0px 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.product img{
+    width: 200px;
+    height: 200px;
+}

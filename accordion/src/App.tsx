@@ -1,5 +1,6 @@
 import "./App.css";
-import ImageSlider from "./components/imageSlider/slider";
+import Explorer from "./components/fileExplorer/Explorer";
+// import ImageSlider from "./components/imageSlider/slider";
 // import TimeSlotPicker from "./components/timeSlot/timeSlotPicker";
 // import Accordian from "./components/accordian/accordion";
 // import RandomColor from "./components/randomBackground/randomColor";
@@ -9,7 +10,8 @@ function App() {
   return (
     <>
       <div>
-        <ImageSlider/>
+        {/* <LoadMore url={"https://dummyjson.com/products"} limit={20} /> */}
+        <Explorer />
       </div>
     </>
   );
