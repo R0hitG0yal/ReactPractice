@@ -1,7 +1,8 @@
 import "./App.css";
-import explorer from "./components/fileExplorer/data";
+import ChangeTheme from "./components/changeTheme/changeTheme";
+// import explorer from "./components/fileExplorer/data";
 
-import Explorer from "./components/fileExplorer/Explorer";
+// import Explorer from "./components/fileExplorer/Explorer";
 // import ImageSlider from "./components/imageSlider/slider";
 // import TimeSlotPicker from "./components/timeSlot/timeSlotPicker";
 // import Accordian from "./components/accordian/accordion";
@@ -13,7 +14,8 @@ function App() {
     <>
       <div>
         {/* <LoadMore url={"https://dummyjson.com/products"} limit={20} /> */}
-        <Explorer data={explorer} />
+        {/* <Explorer data={explorer} /> */}
+        <ChangeTheme />
       </div>
     </>
   );
