@@ -1,5 +1,6 @@
-import "./App.css";
-import ChangeTheme from "./components/changeTheme/changeTheme";
+// import "./App.css";
+// import ChangeTheme from "./components/changeTheme/changeTheme";
+import Scroll from "./components/customScroll/scroll";
 // import explorer from "./components/fileExplorer/data";
 
 // import Explorer from "./components/fileExplorer/Explorer";
@@ -15,7 +16,8 @@ function App() {
       <div>
         {/* <LoadMore url={"https://dummyjson.com/products"} limit={20} /> */}
         {/* <Explorer data={explorer} /> */}
-        <ChangeTheme />
+        {/* <ChangeTheme /> */}
+        <Scroll></Scroll>
       </div>
     </>
   );
