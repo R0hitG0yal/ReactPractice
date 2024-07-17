@@ -49,8 +49,19 @@ const Scroll = () => {
   if (error) return <div>Error occurred! {error}</div>;
 
   return (
-    <>
-      <div>
+    <div
+      style={{
+        width: "100vw",
+      }}
+    >
+      <div
+        style={{
+          position: "fixed",
+          top: "0rem",
+          backgroundColor: "violet",
+          width: "100vw",
+        }}
+      >
         <p>Custom scroll Indicator</p>
         <div
           style={{
@@ -60,14 +71,14 @@ const Scroll = () => {
           }}
         ></div>
       </div>
-      <div>
+      <div style={{ marginTop: "70px" }}>
         {data && data.length > 0
           ? data.map((item) => {
               return <p key={item.id}>{item.title}</p>;
             })
           : null}
       </div>
-    </>
+    </div>
   );
 };
 
